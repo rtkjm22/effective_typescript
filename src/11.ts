@@ -1,3 +1,4 @@
+export {}
 interface Room {
   numDoors: number
   ceilingHeightFt: number
@@ -13,7 +14,7 @@ const obj2 = {
   elephant: 'present',
 }
 
-const r: Room = {...obj}
+const r: Room = { ...obj }
 const t: Room = obj2
 const s: Room = {
   numDoors: 1,
