@@ -16,6 +16,7 @@ const v: NamedVector = { x: 3, y: 4, name: 'Pythagoras' }
 
 calculateLength(v)
 
+export {}
 interface Vector3D {
   x: number
   y: number
@@ -31,5 +32,4 @@ function normalize(v: Vector3D) {
   }
 }
 
-console.log(normalize({x: 3, y: 4, z: 5}))
-
+console.log(normalize({ x: 3, y: 4, z: 5 }))
