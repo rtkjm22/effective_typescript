@@ -1,3 +1,4 @@
+export {}
 interface Person {
   first: string
   lastName: string
