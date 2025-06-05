@@ -1,3 +1,4 @@
+export {}
 const add = (a: number, b: number) => {
   return a + b
 }
@@ -30,7 +31,6 @@ const calc = (shape: Shape): number => {
 function add(a: number, b: number): number
 function add(a: string, b: string): string
 
-function add (a: any, b: any): any {
+function add(a: any, b: any): any {
   return a + b
 }
-

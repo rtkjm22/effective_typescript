@@ -1,3 +1,4 @@
+export {}
 console.log('hogehoge')
 
 const x = 2 + '3'
