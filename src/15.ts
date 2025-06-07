@@ -51,14 +51,38 @@ type TopNavState = {
 }
 type Pick<T, K> = { [k in K]: T[k] }
 
-
-
 interface Save {
   type: 'save'
 }
 interface Load {
-  type : 'load'
+  type: 'load'
 }
 type Action = Save | Load
 type ActionType = Action['type']
 type OtherType = Pick<Action, 'type'>
+
+type Options = {
+  width: number
+  height: number
+}
+
+type OptionsUpdate<T> = {
+  [K in keyof T]?: T[K]
+}
+
+class UIWidget {
+  constructor(init: Options) {}
+  update(options: OptionsUpdate<Options>) {
+
+  }
+}
+
+
+type ShortToLong = {
+  q: 'search',
+  n: 'numberOfResult'
+}
+
+type LongToShort = {
+  [k in keyof ShortToLong as ShortToLong[k]]: k
+}
